@@ -9,12 +9,3 @@ export async function getBlogs() {
     throw new Error("Failed to fetch post :", error);
   }
 }
-
-export async function getImages() {
-  try {
-    const res = await axios(`${API}/photos`);
-    return res.data;
-  } catch (error) {
-    throw new Error("Failed to fetch photos :", error);
-  }
-}
